@@ -1,23 +1,23 @@
 import React from "react";
-import brazil from "../Assets/brazil.png";
-import callCenter from "../Assets/call-center.png";
-import car2 from "../Assets/car-2.png";
+import PredioComercial from "../Assets/predio-comercial.png";
+import Retroescavadeira from "../Assets/retroescavadeira.png";
+import RoloPintura from "../Assets/rolo-de-pintura.png";
 
 const Servicos = () => {
   const coberturaData = [
     {
-      image: brazil,
-      title: "Nosso Serviço 1",
+      image: PredioComercial,
+      title: "Manutenção predial",
       text: "Descrição do serviço",
     },
     {
-      image: callCenter,
-      title: "Nosso Serviço 2",
+      image: Retroescavadeira,
+      title: "Obras de infraestrutura",
       text: "Descrição do serviço",
     },
     {
-      image: car2,
-      title: "Nosso Serviço 3",
+      image: RoloPintura,
+      title: "Construção e reforma",
       text: "Descrição do serviço",
     }
   ];
