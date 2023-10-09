@@ -1,6 +1,6 @@
 import React from "react";
 // import { FiArrowRight } from "react-icons/fi";
-import { FaInstagram } from "react-icons/fa"
+import { FaInstagram, FaWhatsapp } from "react-icons/fa"
 // import { useState } from "react";
 import Logo from '../Assets/Logo.png'
 
@@ -119,8 +119,11 @@ const Home = () => {
             <p className="primary-text-home">
               Inovação, qualidade e compromisso - Nossa receita para o sucesso na construção e reforma.
             </p>
-            <button onClick={handleInstagramClick} className="whatsapp-button" target="blank">
+            <button onClick={handleInstagramClick} className="'instagram-button'" target="blank">
               <FaInstagram /> Fale conosco
+            </button>
+            <button className="whatsapp-button" target="blank">
+              <FaWhatsapp /> Fale conosco
             </button>
           </div>
           <div className="home-form-section">

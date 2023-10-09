@@ -5,9 +5,10 @@ import RoloPintura from "../Assets/rolo-de-pintura.png";
 
 const Servicos = () => {
   const coberturaData = [
+    
     {
-      image: PredioComercial,
-      title: "Manutenção predial",
+      image: RoloPintura,
+      title: "Construção e reforma",
       text: "Descrição do serviço",
     },
     {
@@ -16,8 +17,8 @@ const Servicos = () => {
       text: "Descrição do serviço",
     },
     {
-      image: RoloPintura,
-      title: "Construção e reforma",
+      image: PredioComercial,
+      title: "Manutenção predial",
       text: "Descrição do serviço",
     }
   ];
