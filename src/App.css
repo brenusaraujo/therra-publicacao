@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'AR One Sans', sans-serif !important;
+  font-family: "AR One Sans", sans-serif !important;
 }
 img {
   max-width: 100%;
@@ -131,8 +131,8 @@ nav {
 .modal-container {
   position: fixed;
   z-index: 1000; /* Garante que o botão esteja sempre acima do conteúdo da página */
-  bottom: 7rem; 
-  right: 25%; 
+  bottom: 7rem;
+  right: 25%;
   transition: 0.2s;
   font-size: 1.3rem;
   color: #007e99;
@@ -149,7 +149,6 @@ nav {
   text-decoration: none;
   color: rgb(180, 0, 0);
 }
-
 
 .modal {
   border-radius: 2rem;
@@ -246,7 +245,32 @@ nav {
 
 .whatsapp-button {
   padding: 1rem 2.5rem;
-  background-color: #47ba28;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -266,7 +290,7 @@ nav {
 }
 .whatsapp-button:hover {
   background-color: #ffffff;
-  color: #47ba28;
+  color: #ffffff;
 }
 .about-section-container {
   position: relative;
@@ -491,7 +515,7 @@ nav {
   margin-top: 1.5rem;
 }
 .consultants-section-wrapper {
-  background-color: #8ed973;
+  background-color: #4056a1;
 }
 .work-section-top p {
   text-align: center;

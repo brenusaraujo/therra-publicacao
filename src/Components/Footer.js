@@ -1,15 +1,12 @@
 import React from "react";
 import Logo from "../Assets/Logo.png";
-import { BsWhatsapp, BsInstagram, BsFacebook } from "react-icons/bs";
+import { BsInstagram, BsFacebook } from "react-icons/bs";
 
 const Footer = () => {
-  const telefone = 5571992402531;
-  const message = `Olá, tudo bem? Gostaria de uma cotação para meu veículo.`;
 
-  const URL_WHATSAPP_SEM_MENSAGEM = `https://api.whatsapp.com/send?phone=${telefone}&text=${encodeURIComponent(message)}`;
-  const URL_INSTAGRAM = "https://www.instagram.com/edclube.mais/";
-  const URL_FACEBOOK = "https://www.facebook.com/edclube/";
-  const URL_GOOGLE_MAPS = "https://www.google.com.br/maps/place/Condomínio+Edifício+Catabas+Empresarial/@-12.9812211,-38.4564026,15z/data=!4m6!3m5!1s0x7161b1a59ca0445:0x6c83632e7c80bd6a!8m2!3d-12.9812211!4d-38.4564026!16s%2Fg%2F1vf9ckns?entry=ttu";
+  const URL_INSTAGRAM = "https://www.instagram.com/therraconstrutora/";
+  const URL_FACEBOOK = "https://www.facebook.com/";
+  const URL_GOOGLE_MAPS = "https://www.google.com/maps/place/Condom%C3%ADnio+Empresarial+%C3%94mega/@-12.9813171,-38.4577584,17z/data=!4m10!1m2!2m1!1sAv.+Tancredo+Neves,+n%C2%B0+1283,+Edf.+Empresarial+%C3%94mega,+sala+902,+Caminho+das+Arvores!3m6!1s0x7161b1aa96f5ccd:0xdc97cbf51a17b47e!8m2!3d-12.981398!4d-38.455217!15sClRBdi4gVGFuY3JlZG8gTmV2ZXMsIG7CsCAxMjgzLCBFZGYuIEVtcHJlc2FyaWFsIMOUbWVnYSwgc2FsYSA5MDIsIENhbWluaG8gZGFzIEFydm9yZXOSARNjb25kb21pbml1bV9jb21wbGV44AEA!16s%2Fg%2F1tnmry4_?authuser=0&entry=ttu";
 
 
   return (
@@ -19,9 +16,6 @@ const Footer = () => {
           <img src={Logo} alt="logo" />
         </div>
         <div className="footer-icons">
-          <a href={URL_WHATSAPP_SEM_MENSAGEM} target="blank">
-            <BsWhatsapp />
-          </a>
           <a href={URL_INSTAGRAM} target="blank">
             <BsInstagram />
           </a>
@@ -32,10 +26,7 @@ const Footer = () => {
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
-          <a target="blank" href={URL_GOOGLE_MAPS} className="footer-option">Av. Tancredo Neves, N° 1222, Sala 1004, Edifício Catabas Tower, Caminho das Árvores, Salvador, Bahia, 41820-020.</a>
-          <a target="blank" href="tel:+5571992402531" className="footer-option">(71) 99240-2531 (cotação)</a>
-          <a target="blank" href="tel:+557134329999" className="footer-option">(71) 3432-9999 (central telefônica)</a>
-          <a target="blank" href="tel:+5571999011086" className="footer-option">(71) 99901-1086 (WhatsApp central)</a>
+          <a target="blank" href={URL_GOOGLE_MAPS} className="footer-option">Av. Tancredo Neves, n° 1283, Edf. Empresarial Ômega, sala 902, Caminho das Árvores, 41820-021, Salvador.</a>
         </div>
       </div>
     </div>

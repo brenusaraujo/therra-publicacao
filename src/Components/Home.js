@@ -1,110 +1,108 @@
 import React from "react";
-import { FiArrowRight } from "react-icons/fi";
-import { ImWhatsapp } from "react-icons/im"
-import { useState } from "react";
+// import { FiArrowRight } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa"
+// import { useState } from "react";
 import Logo from '../Assets/Logo.png'
 
-function calcularAnoDosCarros(intervaloAnos) {
-  const anoAtual = new Date().getFullYear();
-  const anoInicial = anoAtual - intervaloAnos + 1;
-  const anoDosCarros = Array.from({ length: intervaloAnos }, (_, index) => anoInicial + index);
-  return anoDosCarros;
-}
+// function calcularAnoDosCarros(intervaloAnos) {
+//   const anoAtual = new Date().getFullYear();
+//   const anoInicial = anoAtual - intervaloAnos + 1;
+//   const anoDosCarros = Array.from({ length: intervaloAnos }, (_, index) => anoInicial + index);
+//   return anoDosCarros;
+// }
 
 const Home = () => {
-  const intervaloAnos = 15;
-  const anoDosCarros = calcularAnoDosCarros(intervaloAnos);
-  const telefone = 5571992402531;
-  const telefoneBoleto = 5571999011086;
-  const [nome, setNome] = useState('');
-  const [email, setEmail] = useState('');
-  const [telefoneUser, setTelefoneUser] = useState('');
-  const [modeloCarro, setModeloCarro] = useState('');
-  const [anoCarro, setAnoCarro] = useState(new Date().getFullYear());
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const intervaloAnos = 15;
+  // const anoDosCarros = calcularAnoDosCarros(intervaloAnos);
+  // const [nome, setNome] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [telefoneUser, setTelefoneUser] = useState('');
+  // const [modeloCarro, setModeloCarro] = useState('');
+  // const [anoCarro, setAnoCarro] = useState(new Date().getFullYear());
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
+  // const toggleModal = () => {
+  //   setIsModalOpen(!isModalOpen);
+  // };
 
-  const styleTeste = {
-    width: isModalOpen ? '35rem' : '0rem',
-    height: isModalOpen ? '12rem' : '0rem',
-    bottom: isModalOpen ? '15rem' : '2rem',
-    right: isModalOpen ? '10rem' : '2rem',
-    backgroundColor: isModalOpen ? 'white' : ' ',
-  }
+  // const styleTeste = {
+  //   width: isModalOpen ? '35rem' : '0rem',
+  //   height: isModalOpen ? '12rem' : '0rem',
+  //   bottom: isModalOpen ? '15rem' : '2rem',
+  //   right: isModalOpen ? '10rem' : '2rem',
+  //   backgroundColor: isModalOpen ? 'white' : ' ',
+  // }
 
-  const formatarTelefone = (input) => {
-    const numeroApenasDigitos = input.replace(/\D/g, '');
+  // const formatarTelefone = (input) => {
+  //   const numeroApenasDigitos = input.replace(/\D/g, '');
 
-    let formatoTelefone = '';
+  //   let formatoTelefone = '';
 
-    if (numeroApenasDigitos.length >= 2) {
-      formatoTelefone = `(${numeroApenasDigitos.substring(0, 2)}`;
-    } else {
-      formatoTelefone = numeroApenasDigitos;
-    }
+  //   if (numeroApenasDigitos.length >= 2) {
+  //     formatoTelefone = `(${numeroApenasDigitos.substring(0, 2)}`;
+  //   } else {
+  //     formatoTelefone = numeroApenasDigitos;
+  //   }
 
-    if (numeroApenasDigitos.length > 2) {
-      formatoTelefone += `) ${numeroApenasDigitos.substring(2, 3)}`;
-    }
+  //   if (numeroApenasDigitos.length > 2) {
+  //     formatoTelefone += `) ${numeroApenasDigitos.substring(2, 3)}`;
+  //   }
 
-    if (numeroApenasDigitos.length > 3) {
-      formatoTelefone += `${numeroApenasDigitos.substring(3, 7)}`;
-    }
+  //   if (numeroApenasDigitos.length > 3) {
+  //     formatoTelefone += `${numeroApenasDigitos.substring(3, 7)}`;
+  //   }
 
-    if (numeroApenasDigitos.length > 7) {
-      formatoTelefone += `-${numeroApenasDigitos.substring(7, 11)}`;
-    }
+  //   if (numeroApenasDigitos.length > 7) {
+  //     formatoTelefone += `-${numeroApenasDigitos.substring(7, 11)}`;
+  //   }
 
-    return formatoTelefone;
-  };
+  //   return formatoTelefone;
+  // };
 
-  const handleNomeChange = (e) => {
-    setNome(e.target.value);
-  };
+  // const handleNomeChange = (e) => {
+  //   setNome(e.target.value);
+  // };
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
+  // const handleEmailChange = (e) => {
+  //   setEmail(e.target.value);
+  // };
 
-  const handleTelefoneChange = (e) => {
-    const novoValor = e.target.value;
-    setTelefoneUser(formatarTelefone(novoValor));
-  };
+  // const handleTelefoneChange = (e) => {
+  //   const novoValor = e.target.value;
+  //   setTelefoneUser(formatarTelefone(novoValor));
+  // };
 
-  const handleModeloCarroChange = (e) => {
-    setModeloCarro(e.target.value);
-  };
+  // const handleModeloCarroChange = (e) => {
+  //   setModeloCarro(e.target.value);
+  // };
 
-  const handleAnoCarroChange = (e) => {
-    setAnoCarro(e.target.value);
-  };
+  // const handleAnoCarroChange = (e) => {
+  //   setAnoCarro(e.target.value);
+  // };
 
-  const handleWhatsAppButtonClick = () => {
-    const message = `Olá, tudo bem? Eu me chamo ${nome}, tenho um ${modeloCarro} ${anoCarro} e gostaria de uma cotação para meu veículo.`;
+  // const handleWhatsAppButtonClick = () => {
+  //   const message = `Olá, tudo bem? Eu me chamo ${nome}, tenho um ${modeloCarro} ${anoCarro} e gostaria de uma cotação para meu veículo.`;
 
-    const whatsappUrl = `https://wa.me/${telefone}?text=${encodeURIComponent(message)}`;
+  //   const whatsappUrl = `https://wa.me/${telefone}?text=${encodeURIComponent(message)}`;
 
-    window.open(whatsappUrl, '_blank');
+  //   window.open(whatsappUrl, '_blank');
 
-    window.dataLayer.push({
-      'event': 'click_button_lead_qualificado',
-      'email': email,
+  //   window.dataLayer.push({
+  //     'event': 'click_button_lead_qualificado',
+  //     'email': email,
 
-    });
-  };
-  const handleWhatsAppButtonClickWithoutMessage = () => {
-    const message = `Olá, tudo bem? Gostaria da segunda via do boleto.`;
+  //   });
+  // };
+  const handleInstagramClick = () => {
+    // const message = `Olá, tudo bem? Gostaria da segunda via do boleto.`;
 
-    const whatsappUrl = `https://wa.me/${telefoneBoleto}?text=${encodeURIComponent(message)}`;
+    const instagramURL = 'https://www.instagram.com/therraconstrutora/';
 
-    window.open(whatsappUrl, '_blank');
+    window.open(instagramURL, '_blank');
 
-    window.dataLayer.push({
-      'event': 'click_button_lead'
-    });
+    // window.dataLayer.push({
+    //   'event': 'click_button_lead'
+    // });
   };
   return (
     <div className="home-container">
@@ -116,13 +114,13 @@ const Home = () => {
         <div className="texto-home">
           <div className="home-titulo-section">
             <h1 className="primary-heading">
-              Therra Engenharia.
+              Therra Engenharia
             </h1>
             <p className="primary-text-home">
               Inovação, qualidade e compromisso - Nossa receita para o sucesso na construção e reforma.
             </p>
-            <button onClick={handleWhatsAppButtonClickWithoutMessage} className="whatsapp-button" target="blank">
-              <ImWhatsapp /> Fale conosco
+            <button onClick={handleInstagramClick} className="whatsapp-button" target="blank">
+              <FaInstagram /> Fale conosco
             </button>
           </div>
           <div className="home-form-section">
