@@ -119,7 +119,7 @@ const Home = () => {
             <p className="primary-text-home">
               Inovação, qualidade e compromisso - Nossa receita para o sucesso na construção e reforma.
             </p>
-            <button onClick={handleInstagramClick} className="'instagram-button'" target="blank">
+            <button onClick={handleInstagramClick} className="instagram-button" target="blank">
               <FaInstagram /> Fale conosco
             </button>
             <button className="whatsapp-button" target="blank">
