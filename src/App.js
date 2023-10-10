@@ -6,6 +6,7 @@ import Assistencia from "./Components/Assistencia";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import ConstruirLares from "./Components/ConstruirLares"
+import Navbar from "./Components/NavBar";
 import TagManager from 'react-gtm-module'
 const tagManagerArgs = {
   gtmId: 'GTM-PXG4FM9B'
@@ -15,6 +16,7 @@ TagManager.initialize(tagManagerArgs)
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Home />
       <Servicos />
       <ConstruirLares />

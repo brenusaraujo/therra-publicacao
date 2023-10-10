@@ -2,7 +2,7 @@ import React from "react";
 // import { FiArrowRight } from "react-icons/fi";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa"
 // import { useState } from "react";
-import Logo from '../Assets/Logo.png'
+// import Logo from '../Assets/Logo.png'
 
 // function calcularAnoDosCarros(intervaloAnos) {
 //   const anoAtual = new Date().getFullYear();
@@ -108,9 +108,9 @@ const Home = () => {
     <div className="home-container">
 
       <div className="home-banner-container">
-        <div className="nav-logo-container">
+        {/* <div className="nav-logo-container">
           <img src={Logo} alt="logo" />
-        </div>
+        </div> */}
         <div className="texto-home">
           <div className="home-titulo-section">
             <h1 className="primary-heading">
