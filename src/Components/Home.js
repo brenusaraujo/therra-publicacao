@@ -12,6 +12,7 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa"
 // }
 
 const Home = () => {
+  const telefoneTherra = 557581796894;
   // const intervaloAnos = 15;
   // const anoDosCarros = calcularAnoDosCarros(intervaloAnos);
   // const [nome, setNome] = useState('');
@@ -104,13 +105,21 @@ const Home = () => {
     //   'event': 'click_button_lead'
     // });
   };
+  const handleWhatsAppClick = () => {
+    const message = 'Olá, tudo bem? Vim do website de vocês e gostaria de saber mais sobre seus serviços.';
+
+    const whatsappUrl = `https://wa.me/${telefoneTherra}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappUrl, '_blank');
+
+    // window.dataLayer.push({
+    //   'event': 'click_button_lead'
+    // });
+  };
   return (
     <div className="home-container">
 
       <div className="home-banner-container">
-        {/* <div className="nav-logo-container">
-          <img src={Logo} alt="logo" />
-        </div> */}
         <div className="texto-home">
           <div className="home-titulo-section">
             <h1 className="primary-heading">
@@ -122,7 +131,7 @@ const Home = () => {
             <button onClick={handleInstagramClick} className="instagram-button" target="blank">
               <FaInstagram /> Fale conosco
             </button>
-            <button className="whatsapp-button" target="blank">
+            <button onClick={handleWhatsAppClick} className="whatsapp-button" target="blank">
               <FaWhatsapp /> Fale conosco
             </button>
           </div>
